@@ -11,6 +11,7 @@ Sources:
     https://github.com/bustedlogic/DWIN_T5UIC1_LCD
     https://albertogrespan.com/blog/3d-printing/klipper-on-an-ender-3/
     https://www.klipper3d.org/Command_Templates.html
+    https://gist.github.com/besser/30140a30312d5c7adceabf8a493472c3
   
   Marlin:
   
