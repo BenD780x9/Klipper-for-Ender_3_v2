@@ -22,13 +22,13 @@ Sources:
     
   Marlin:
   
-   ****https://marlinfw.org/
+   https://marlinfw.org/
    
    https://marlin.crc.id.au/firmware/Ender%203%20V2%20-%20Stock/
        
    https://github.com/Jyers/Marlin
        
-   https://github.com/mriscoc/Marlin_Ender3v2/releases****
+   https://github.com/mriscoc/Marlin_Ender3v2/releases
   
   GCODE:
     **https://github.com/prusa3d/PrusaSlicer/wiki/Slic3r-placeholders-(a-copy-of-the-mauk.cc-page)**
