@@ -1,8 +1,8 @@
 # Ender_3_v2
 Configuration files for Slicer and Klipper.
 
-**This guid is replica of https://www.reddit.com/r/klippers/comments/kj2h5r/stepbystep_guide_for_ender_3_v2_klipper_w_bltouch/ 
-  that I change it to work with Fluidd/MainsailOS and with my own configuration files. **
+**This guide is replica of https://www.reddit.com/r/klippers/comments/kj2h5r/stepbystep_guide_for_ender_3_v2_klipper_w_bltouch/ 
+  that I change it to work with Fluidd/MainsailOS and with my own configuration files.**
 
 Step-by-Step Guide for Ender 3 v2 Klipper with BLTouch and BMD extruder. (Flidd/MainsailOS) # NOT for OctoPrint
 
