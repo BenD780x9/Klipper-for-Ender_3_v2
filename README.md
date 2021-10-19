@@ -31,5 +31,6 @@ Sources:
    https://github.com/mriscoc/Marlin_Ender3v2/releases
   
   GCODE:
-    **https://github.com/prusa3d/PrusaSlicer/wiki/Slic3r-placeholders-(a-copy-of-the-mauk.cc-page)**
+  
+    https://github.com/prusa3d/PrusaSlicer/wiki/Slic3r-placeholders-(a-copy-of-the-mauk.cc-page)
   
