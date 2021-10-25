@@ -238,7 +238,7 @@ Check this [github page](https://github.com/bustedlogic/DWIN_T5UIC1_LCD) and in 
   
   # To Do: 
   
-    Add https://www.youtube.com/user/Neroga videos
+    
   
   
   
