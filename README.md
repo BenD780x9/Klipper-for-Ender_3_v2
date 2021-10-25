@@ -51,7 +51,7 @@ and the printer's motherboard is simply there to pass messages to the hardware.
 
 ## **Basic Installation**
 
-
+1. You'll need to install [Fluidd](https://docs.fluidd.xyz/)/[MainsailOS](https://docs.mainsail.xyz/setup/mainsail-os) on a Raspberry Pi (don't use a v1 or a Zero). If you have Fluidd/MainsailOS, this should already be done.
 
 
 
