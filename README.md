@@ -97,7 +97,7 @@ and the printer's motherboard is simply there to pass messages to the hardware.
    This is the equivalent of Marlin's `configuration.h` but you don't have to recompile firmware to change anything! It's pretty slick.   
    
    A. In the home directory folder (`~/`) make a file called `printer.cfg`. \ 
-      **Do not do this in the Klipper sub-folder**, it should be in your regular home directory.
+   **Do not do this in the Klipper sub-folder**, it should be in your regular home directory.
    
    
   ## Klipper:
