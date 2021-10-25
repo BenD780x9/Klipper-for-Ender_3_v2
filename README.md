@@ -16,6 +16,7 @@ is fundamentally similar to Marlin except that it runs on the Raspberry
 Pi vs. the motherboard itself. The firmware on the motherboard becomes "dumb" 
 and everything runs on a much more powerful CPU.
 
+**For more information about Klipper wach [this](https://www.youtube.com/watch?v=iNHta6zljoM)**
 
 ## **Why should I install Klipper?**
 
@@ -146,7 +147,7 @@ There's a lot of [bed mesh configuration options](https://github.com/KevinOConno
 ## Configuring BMG
 **This part is very important so don't skip it**\
 To use BMG you need to calculate the rotation_distance in your printer.
-you can do it with [this git](https://www.klipper3d.org/Rotation_Distance.html?h=bmg#calibrating-rotation_distance-on-extruders) or [this video](https://www.youtube.com/watch?v=4PgOdES7n8Y) or [this]()
+you can do it with [this klipper guide](https://www.klipper3d.org/Rotation_Distance.html?h=bmg#calibrating-rotation_distance-on-extruders) or [this video](https://www.youtube.com/watch?v=4PgOdES7n8Y) or [this]()
 
    ## Screw Measurement
 
@@ -195,6 +196,7 @@ the frequency of the ripples in the print. Then, you tell Klipper those frequenc
     shaper_freq_y: 46.8
     shaper_type: ei
 
+**For more advance use [this video](https://www.youtube.com/watch?v=OoWQUcFimX8)**
 
 **Pressure Advance**
 Setting pressure advance is really straightforward with [these instructions](https://www.klipper3d.org/Pressure_Advance.html). You just slice an stl file, then get the printer into a special mode, 
@@ -254,6 +256,10 @@ Check this [github page](https://github.com/bustedlogic/DWIN_T5UIC1_LCD) and in 
    https://www.klipper3d.org/Command_Templates.html
     
    https://gist.github.com/besser/30140a30312d5c7adceabf8a493472c3
+   
+   https://www.youtube.com/watch?v=EJapxNsntsQ
+   
+   https://www.youtube.com/c/Nero3D/videos
     
     
   ## Marlin:
