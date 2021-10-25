@@ -120,6 +120,7 @@ For BLTouch, you have to do a bit more work to get Klipper configured. You shoul
     `x_offset: -42`
     `y_offset: -10`
 
+Also check this [video](https://www.youtube.com/watch?v=ABsdnkP4iwQ)
 
 ## Probe calibration
 With Klipper you can [calibrate the x and y offsets more precisely](https://www.klipper3d.org/Probe_Calibrate.html) and then you'll also need to add your z offset.\
@@ -141,7 +142,11 @@ There's a lot of [bed mesh configuration options](https://github.com/KevinOConno
     fade_start: 1
     fade_end: 10
     fade_target: 0
-  
+
+## Configuring BMG
+**This part is very important so don't skip it**\
+To use BMG you need to calculate the rotation_distance in your printer.
+you can do it with [this git](https://www.klipper3d.org/Rotation_Distance.html?h=bmg#calibrating-rotation_distance-on-extruders) or [this video](https://www.youtube.com/watch?v=4PgOdES7n8Y) or [this]()
 
    ## Screw Measurement
 
