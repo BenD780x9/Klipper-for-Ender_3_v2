@@ -3,7 +3,7 @@
 <img align="right" width=200 src="https://raw.githubusercontent.com/BenD780x9/Marlin_Ender3v2/Ender3v2-Released/buildroot/share/pixmaps/Ender-3V2.jpg" />
 
 **This guide is replica of [this Reddit post](https://www.reddit.com/r/klippers/comments/kj2h5r/stepbystep_guide_for_ender_3_v2_klipper_w_bltouch/)
-  that I change it to work with BLTOUCH and BMG and on Fluidd/MainsailOS and with my own configuration files.**
+  that I change it to work with BLTOUCH and BMG on Fluidd/MainsailOS and with my own configuration files.**
 
 
 
