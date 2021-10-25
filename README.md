@@ -99,7 +99,8 @@ and the printer's motherboard is simply there to pass messages to the hardware.
    A. In the home directory folder (`~/`) make a file called `printer.cfg`.\
         **Do not do this in the Klipper sub-folder**, it should be in your regular home directory.
         
-   B. Copy the contents of [this Ender 3 v2 configuration file](https://github.com/KevinOConnor/klipper/blob/master/config/printer-creality-ender3-v2-2020.cfg) into printer.cfg and save it.
+   B. Copy the contents of [this Ender 3 v2 configuration file](https://github.com/KevinOConnor/klipper/blob/master/config/printer-creality-ender3-v2-2020.cfg) into printer.cfg and save it. 
+   **Or you can download and add my printer.cfg file from this git and change the parameters that work for you**
    
    C. In the Terminal of Fluidd / Mainsail, type `restart`. You should see the printer restart and become ready without errors.\
    You can also issue a `status` command. What's beautiful about Klipper is that whenever you make config changes, \
@@ -130,28 +131,45 @@ Note that during calibration you will need to let the z axis go negative, so you
 ## Configuring Mesh Leveling
 There's a lot of [bed mesh configuration options](https://github.com/KevinOConnor/klipper/blob/master/docs/Bed_Mesh.md), but here's one that works for me:
 
-                [bed_mesh]
-
-                speed: 120
-
-                horizontal_move_z: 5
-
-                mesh_min: 15, 15
-
-                mesh_max: 193, 193
-
-                probe_count: 3,3
-
-                algorithm: bicubic
-
-                fade_start: 1
-
-                fade_end: 10
-
-                fade_target: 0
+    [bed_mesh]
+    speed: 120
+    horizontal_move_z: 5
+    mesh_min: 15, 15 # min 15 mm for the probe
+    mesh_max: 193, 193 # max 193 mm for the probe
+    probe_count: 3,3 # Mesh points
+    algorithm: bicubic
+    fade_start: 1
+    fade_end: 10
+    fade_target: 0
   
 
+   ## Screw Measurement
+
+What's amazing about Klipper is that it has a screw measurement feature.
+It runs BLTouch above each of the 4 screws and tells you how much to 
+turn each one to dial your bed in perfectly (e.g., "CW 00:15" or turn 
+clockwise 1/4 turn). To enable this, add:
    
+    [screws_tilt_adjust]
+    screw1: 70.5,37.5
+    screw1_name: front left screw
+    screw2: 240,37.5
+    screw2_name: front right screw
+    screw3: 240,207.5
+    screw3_name: rear right screw
+    screw4: 70.5,207.5
+    screw4_name: rear left screw
+    horizontal_move_z: 10
+    speed: 50
+    screw_thread: CW-M4
+ 
+ 1. With all of this done, you can now level the bed. First, home with `G28` and type `SCREWS_TILT_CALCULATE` to adjust the bed.\
+     You can type `SCREWS_TILT_CALCULATE` multiple times until it's close.
+     
+ 2. To level the bed, you can run `BED_MESH_CALIBRATE`. After calibration, make sure to hit `SAVE_CONFIG`.
+    
+    **You can start it via G29 macro code** 
+     
    
   ## Klipper:
 
