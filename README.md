@@ -106,6 +106,23 @@ and the printer's motherboard is simply there to pass messages to the hardware.
    you just save and run `restart` and that's it. No recompiling!
    
    
+## Configuring BLTouch and Mesh Leveling
+
+If you have BLTouch, you have to do a bit more work to get Klipper configured. You should read the [detailed guide](https://www.klipper3d.org/BLTouch.html), but this is a quick summary.
+
+Add the following code to your `printer.cfg`:
+
+If you use the original mount for the BLTOUCH from Creality than change: 
+  `x_offset: -43`
+  `y_offset: -7.5`
+  
+If you use the mount from [Thingiverse](https://www.thingiverse.com/thing:4462870) change to:
+  `x_offset: -42`
+  `y_offset: -10`
+
+  
+
+   
    
   ## Klipper:
 
