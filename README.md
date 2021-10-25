@@ -36,7 +36,7 @@ advantages to Klipper:
   * Deep customizability without needing to recompile firmware
   * Custom G-codes and macros
 
-## **Warning:** Installing 
+**Warning:** Installing 
 Klipper will mean your printer's LCD is always blank. If you want 
 control when you're physically at the printer, you'll need to add a 
 touchscreen LCD to your Raspberry Pi instead and control the printer via
