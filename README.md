@@ -213,6 +213,9 @@ While printing, simply issue `SET_GCODE_OFFSET Z_ADJUST=0.01 MOVE=1` to move the
 Reset to default with `SET_GCODE_OFFSET Z=0.0 MOVE=1`.
 
 
+## What is Macro?
+A serias of commands to be run when a specific command is input
+
 **Custom Macros and G-Codes**
 At first glance, it looks like Klipper doesn't support some g-codes that Marlin does. However,\
 what Klipper supports is custom macros so you can create any g-code. For example, my G29 is:
