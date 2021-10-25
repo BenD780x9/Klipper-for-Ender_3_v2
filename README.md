@@ -86,7 +86,15 @@ and the printer's motherboard is simply there to pass messages to the hardware.
 
     A. In Settings, go to Serial Connection and add `/tmp/printer` to Additional serial ports. Once you save, \
        in the same menu choose `/tmp/printer` under Serial Port.
+       
+    B. Under Behavior, select `Cancel any ongoing prints but stay connected to the printer`.
+    
+    C. If everything is good, you should see `/tmp/printer` in the main connection page and you should be able to connect. \
+       If you go to Terminal and type `status` you should get back an error about config files. \
+       This means you're communicating with the printer's new firmware!
    
+7. Now we want to configure the firmware for the Ender 3 v2. \
+   This is the equivalent of Marlin's `configuration.h` but you don't have to recompile firmware to change anything! It's pretty slick.   
    
    
    
