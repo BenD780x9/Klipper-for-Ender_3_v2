@@ -71,6 +71,8 @@ and the printer's motherboard is simply there to pass messages to the hardware.
       v. Uncheck the other two options (`Use USB` **and** `Use CAN`).
              
      vi. Save and exit.
+     
+     D. Type `make` and let it run.
 
 
   ## Klipper:
