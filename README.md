@@ -84,12 +84,12 @@ and the printer's motherboard is simply there to pass messages to the hardware.
 
 **6**. You need to configure OctoPrint to communicate with the printer.
 
-    A. In Settings, go to Serial Connection and add `/tmp/printer` to Additional serial ports. Once you save, \
+   A. In Settings, go to Serial Connection and add `/tmp/printer` to Additional serial ports. Once you save, \
        in the same menu choose `/tmp/printer` under Serial Port.
        
-    B. Under Behavior, select `Cancel any ongoing prints but stay connected to the printer`.
+   B. Under Behavior, select `Cancel any ongoing prints but stay connected to the printer`.
     
-    C. If everything is good, you should see `/tmp/printer` in the main connection page and you should be able to connect. \
+   C. If everything is good, you should see `/tmp/printer` in the main connection page and you should be able to connect. \
        If you go to Terminal and type `status` you should get back an error about config files. \
        This means you're communicating with the printer's new firmware!
    
