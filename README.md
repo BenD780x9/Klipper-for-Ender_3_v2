@@ -60,16 +60,17 @@ and the printer's motherboard is simply there to pass messages to the hardware.
       
       C. Change to the Klipper directory (`cd ~/klipper/`) and run the config tool (`make menuconfig`). Select the following in the menu:
             
-             i. Uncheck **Enable extra low-level configuration options**.
-            ii. Set processor architecture to **STMicroelectronics STM32**.
+         i. Uncheck **Enable extra low-level configuration options**.
+           
+        ii. Set processor architecture to **STMicroelectronics STM32**.
             
-           iii. Set processor model to **STM32F103**.
+       iii. Set processor model to **STM32F103**.
             
-            iv. Set bootloader offset to **28KiB bootloader**.
+        iv. Set bootloader offset to **28KiB bootloader**.
             
-            v. Uncheck the other two options (`Use USB` **and** `Use CAN`).
+         v. Uncheck the other two options (`Use USB` **and** `Use CAN`).
             
-            vi. Save and exit.
+        vi. Save and exit.
 
 
   ## Klipper:
