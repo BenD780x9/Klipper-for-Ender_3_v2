@@ -84,8 +84,8 @@ and the printer's motherboard is simply there to pass messages to the hardware.
 
 6. You need to configure OctoPrint to communicate with the printer.
 
-  A. In Settings, go to Serial Connection and add `/tmp/printer` to Additional serial ports. Once you save, \
-     in the same menu choose `/tmp/printer` under Serial Port.
+    A. In Settings, go to Serial Connection and add `/tmp/printer` to Additional serial ports. Once you save, \
+       in the same menu choose `/tmp/printer` under Serial Port.
    
    
    
