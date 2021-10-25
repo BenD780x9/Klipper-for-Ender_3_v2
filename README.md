@@ -106,20 +106,49 @@ and the printer's motherboard is simply there to pass messages to the hardware.
    you just save and run `restart` and that's it. No recompiling!
    
    
-## Configuring BLTouch and Mesh Leveling
+## Configuring BLTouch
+For BLTouch, you have to do a bit more work to get Klipper configured. You should read the [detailed guide](https://www.klipper3d.org/BLTouch.html),      but this is a quick summary.
 
-If you have BLTouch, you have to do a bit more work to get Klipper configured. You should read the [detailed guide](https://www.klipper3d.org/BLTouch.html), but this is a quick summary.
+1. Add the following code to your `printer.cfg`:
 
-Add the following code to your `printer.cfg`:
-
-If you use the original mount for the BLTOUCH from Creality than change: 
-  `x_offset: -43`
-  `y_offset: -7.5`
+  If you use the original mount for the BLTOUCH from Creality than change: 
+    `x_offset: -43`
+    `y_offset: -7.5`
   
-If you use the mount from [Thingiverse](https://www.thingiverse.com/thing:4462870) change to:
-  `x_offset: -42`
-  `y_offset: -10`
+  If you use the mount from [Thingiverse](https://www.thingiverse.com/thing:4462870) change to:
+    `x_offset: -42`
+    `y_offset: -10`
 
+
+## Probe calibration
+With Klipper you can [calibrate the x and y offsets more precisely](https://www.klipper3d.org/Probe_Calibrate.html) and then you'll also need to add your z offset.\
+The sign is flipped between Marlin and Klipper, so for me the z-offset of `-2.60` became `2.60` here.\
+Note that during calibration you will need to let the z axis go negative, so you can add `position_min: -3` until you're done calibrating.
+
+**Important:** Do all the tests with ["Paper test"](https://www.klipper3d.org/Probe_Calibrate.html) and **only** after you finish them with good results move on with the guide.                
+
+## Configuring Mesh Leveling
+There's a lot of [bed mesh configuration options](https://github.com/KevinOConnor/klipper/blob/master/docs/Bed_Mesh.md), but here's one that works for me:
+
+                [bed_mesh]
+
+                speed: 120
+
+                horizontal_move_z: 5
+
+                mesh_min: 15, 15
+
+                mesh_max: 193, 193
+
+                probe_count: 3,3
+
+                algorithm: bicubic
+
+                fade_start: 1
+
+                fade_end: 10
+
+                fade_target: 0
   
 
    
