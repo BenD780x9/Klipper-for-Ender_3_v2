@@ -15,7 +15,7 @@ Configuration files for Slicer and Klipper.
 
 ## **What is Klipper?**
 
-Klipper https://www.klipper3d.org/
+[Klipper](https://www.klipper3d.org/)
 is fundamentally similar to Marlin except that it runs on the Raspberry
 Pi vs. the motherboard itself. The firmware on the motherboard becomes "dumb" 
 and everything runs on a much more powerful CPU.
