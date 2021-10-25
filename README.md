@@ -171,7 +171,7 @@ clockwise 1/4 turn). To enable this, add:
     **You can start it via G29 macro code** 
      
    
-  # Note: 
+  # To Do: 
   
     Add https://www.youtube.com/user/Neroga videos
   
