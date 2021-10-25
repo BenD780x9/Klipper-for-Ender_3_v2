@@ -1,4 +1,4 @@
-# Ender_3_v2
+## Klipper on Ender 3 V2 
 
 <img align="right" width=200 src="https://raw.githubusercontent.com/BenD780x9/Marlin_Ender3v2/Ender3v2-Released/buildroot/share/pixmaps/Ender-3V2.jpg" />
 
