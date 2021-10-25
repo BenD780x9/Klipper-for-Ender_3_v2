@@ -1,6 +1,7 @@
 ## Klipper for Ender 3 V2 
 
-<img align="right" width=200 src="https://raw.githubusercontent.com/BenD780x9/Marlin_Ender3v2/Ender3v2-Released/buildroot/share/pixmaps/Ender-3V2.jpg" />
+<img align="right" width=200 src="https://i.imgur.com/1tOqspu.png" />
+
 
 **This guide is part of [this Reddit post](https://www.reddit.com/r/klippers/comments/kj2h5r/stepbystep_guide_for_ender_3_v2_klipper_w_bltouch/)
   that I change it to work with BLTOUCH and BMG on Fluidd/MainsailOS with my own configuration files.**
