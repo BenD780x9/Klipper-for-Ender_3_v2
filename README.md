@@ -171,6 +171,12 @@ clockwise 1/4 turn). To enable this, add:
     **You can start it via G29 macro code** 
      
    
+  # Note: 
+  
+    Add https://www.youtube.com/user/Neroga videos
+  
+  
+  
   ## Klipper:
 
    https://www.reddit.com/r/klippers/comments/kj2h5r/stepbystep_guide_for_ender_3_v2_klipper_w_bltouc
