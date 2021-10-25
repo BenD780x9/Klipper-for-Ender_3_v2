@@ -53,6 +53,8 @@ and the printer's motherboard is simply there to pass messages to the hardware.
   You'll run a command like ssh pi@Mainsail where Mainsail is the IP address or hostname of the pi. 
   The default password is raspberry.
 3. We'll generally be following [this guide](https://www.klipper3d.org/Installation.html).
+  A. Clone the git repository: **git clone https://github.com/KevinOConnor/klipper.**
+  B.Run the install script: `./klipper/scripts/install-octopi.sh`.
 
 
 
