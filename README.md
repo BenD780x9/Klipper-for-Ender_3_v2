@@ -75,8 +75,8 @@ and the printer's motherboard is simply there to pass messages to the hardware.
      D. Type `make` and let it run.
 
 
-4. The firmware file will be in ~/klipper/out/klipper.bin. There's many ways to get it out of the Raspberry Pi, but I used scp. \
-    From the main computer (where you ran ssh), type scp pi@octopi:~/klipper/out/klipper.bin klipper.bin.
+4. The firmware file will be in `~/klipper/out/klipper.bin`. There's many ways to get it out of the Raspberry Pi, but I used `scp`. \
+    From the main computer (where you ran ssh), type `scp pi@Mainsail:~/klipper/out/klipper.bin klipper.bin`.
 
   ## Klipper:
 
