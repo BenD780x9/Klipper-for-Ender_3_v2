@@ -1,4 +1,5 @@
- 
+### For PrusaSlicer / superSlicer because Macros dosent work for me now ###
+
 ##### Start: #####
 
 G90 ; use absolute coordinates
