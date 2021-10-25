@@ -227,6 +227,7 @@ what Klipper supports is custom macros so you can create any g-code. For example
 
 You can also create your very own ones!\
 In Cura, my g-codes are now `START_PRINT T_BED={material_bed_temperature_layer_0} T_EXTRUDER={material_print_temperature_layer_0}` and `END_PRINT` with the actual commands defined in `printer.cfg`. This enables much easier porting between machines and slicers.\
+
 **Copy `cura_klipper_start_end.gcode` file and add to cura GECODE setting**\
 And check if START_PRINT AND END_PRINT section in the `printer.cfg` works for you.
 
