@@ -198,7 +198,7 @@ the frequency of the ripples in the print. Then, you tell Klipper those frequenc
     shaper_freq_y: 46.8
     shaper_type: ei
 
-**For more advance use [this video](https://www.youtube.com/watch?v=OoWQUcFimX8)**
+For more advance use [this video](https://www.youtube.com/watch?v=OoWQUcFimX8)
 
 **Pressure Advance**
 Setting pressure advance is really straightforward with [these instructions](https://www.klipper3d.org/Pressure_Advance.html). You just slice an stl file, then get the printer into a special mode, 
