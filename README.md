@@ -50,61 +50,61 @@ and the printer's motherboard is simply there to pass messages to the hardware.
 
 ## **Basic Installation**
 
-**1**. You'll need to install [Fluidd](https://docs.fluidd.xyz/) / [MainsailOS](https://docs.mainsail.xyz/setup/mainsail-os) on a Raspberry Pi (don't use a v1 or a Zero).
-**2**. You'll be doing work on the Raspberry Pi itself, so you'll [want to SSH into it](https://www.raspberrypi.org/documentation/remote-access/ssh/) from another computer. 
+1. You'll need to install [Fluidd](https://docs.fluidd.xyz/) / [MainsailOS](https://docs.mainsail.xyz/setup/mainsail-os) on a Raspberry Pi (don't use a v1 or a Zero).
+2. You'll be doing work on the Raspberry Pi itself, so you'll [want to SSH into it](https://www.raspberrypi.org/documentation/remote-access/ssh/) from another computer. 
   You'll run a command like ssh pi@Mainsail where Mainsail is the IP address or hostname of the pi. 
   `The default password is raspberry`.
-**3**. We'll generally be following [this guide](https://www.klipper3d.org/Installation.html).
+3. We'll generally be following [this guide](https://www.klipper3d.org/Installation.html).
 
-   * A. Clone the git repository: `git clone https://github.com/KevinOConnor/klipper`.
+    * A. Clone the git repository: `git clone https://github.com/KevinOConnor/klipper`.
   
-   * B. Run the install script: `./klipper/scripts/install-octopi.sh`.
+    * B. Run the install script: `./klipper/scripts/install-octopi.sh`.
      
-   * C. Change to the Klipper directory (`cd ~/klipper/`) and run the config tool (`make menuconfig`). Select the following in the menu:
+    * C. Change to the Klipper directory (`cd ~/klipper/`) and run the config tool (`make menuconfig`). Select the following in the menu:
             
-     - i. Uncheck **Enable extra low-level configuration options**.
+      - i. Uncheck **Enable extra low-level configuration options**.
            
-     - ii. Set processor architecture to **STMicroelectronics STM32**.
+       - ii. Set processor architecture to **STMicroelectronics STM32**.
             
-     - iii. Set processor model to **STM32F103**.
+      - iii. Set processor model to **STM32F103**.
             
-     - iv. Set bootloader offset to **28KiB bootloader**.
+      - iv. Set bootloader offset to **28KiB bootloader**.
             
-     - v. Uncheck the other two options (`Use USB` **and** `Use CAN`).
+       - v. Uncheck the other two options (`Use USB` **and** `Use CAN`).
              
-     - vi. Save and exit.
+      - vi. Save and exit.
      
-      * D. Type `make` and let it run.
+    * D. Type `make` and let it run.
 
 
-**4**. The firmware file will be in `~/klipper/out/klipper.bin`. There's many ways to get it out of the Raspberry Pi, but I used `scp`. \
+4. The firmware file will be in `~/klipper/out/klipper.bin`. There's many ways to get it out of the Raspberry Pi, but I used `scp`.\
        From the main computer (where you ran ssh), type `scp pi@Mainsail:~/klipper/out/klipper.bin klipper.bin`.
 
-**5**. Put the file on an SD card and put the SD card into the Ender 3 while the printer is off. \
-       Turn on the printer and it should flash the firmware. If it flashed successfully, your LCD will go blank. \
-       Don't worry, if anything goes wrong simply put Marlin firmware on it and flash it again.
+5. Put the file on an SD card and put the SD card into the Ender 3 while the printer is off. \
+   Turn on the printer and it should flash the firmware. If it flashed successfully, your LCD will go blank. \
+   Don't worry, if anything goes wrong simply put Marlin firmware on it and flash it again.
 
-**6**. You need to configure OctoPrint to communicate with the printer.
+6. You need to configure OctoPrint to communicate with the printer.
 
-  * A. In Settings, go to Serial Connection and add `/tmp/printer` to Additional serial ports. Once you save, \
+    * A. In Settings, go to Serial Connection and add `/tmp/printer` to Additional serial ports. Once you save, \
        in the same menu choose `/tmp/printer` under Serial Port.
        
-  * B. Under Behavior, select `Cancel any ongoing prints but stay connected to the printer`.
+    * B. Under Behavior, select `Cancel any ongoing prints but stay connected to the printer`.
     
-  * C. If everything is good, you should see `/tmp/printer` in the main connection page and you should be able to connect. \
+    * C. If everything is good, you should see `/tmp/printer` in the main connection page and you should be able to connect. \
        If you go to Terminal and type `status` you should get back an error about config files. \
        This means you're communicating with the printer's new firmware!
    
-**7**. Now we want to configure the firmware for the Ender 3 v2.\
-          This is the equivalent of Marlin's `configuration.h` but you don't have to recompile firmware to change anything! It's pretty slick.   
+7. Now we want to configure the firmware for the Ender 3 v2.\
+   This is the equivalent of Marlin's `configuration.h` but you don't have to recompile firmware to change anything! It's pretty slick.   
    
-  * A. In the home directory folder (`~/`) make a file called `printer.cfg`.\
+    * A. In the home directory folder (`~/`) make a file called `printer.cfg`.\
         **Do not do this in the Klipper sub-folder**, it should be in your regular home directory.
         
-  * B. Copy the contents of [this Ender 3 v2 configuration file](https://github.com/KevinOConnor/klipper/blob/master/config/printer-creality-ender3-v2-2020.cfg)          into printer.cfg and save it. 
-   **Or you can download and add my printer.cfg file from this git and change the parameters that work for you**
+    * B. Copy the contents of [this Ender 3 v2 configuration file](https://github.com/KevinOConnor/klipper/blob/master/config/printer-creality-ender3-v2-2020.cfg)          into printer.cfg and save it. 
+    **Or you can download and add my printer.cfg file from this git and change the parameters that work for you**
    
-  * C. In the Terminal of Fluidd / Mainsail, type `restart`. You should see the printer restart and become ready without errors.\
+    * C. In the Terminal of Fluidd / Mainsail, type `restart`. You should see the printer restart and become ready without errors.\
        You can also issue a `status` command. What's beautiful about Klipper is that whenever you make config changes, \
        you just save and run `restart` and that's it. No recompiling!
    
@@ -171,10 +171,10 @@ clockwise 1/4 turn). To enable this, add:
     speed: 50
     screw_thread: CW-M4
  
- **1**. With all of this done, you can now level the bed. First, home with `G28` and type `SCREWS_TILT_CALCULATE` to adjust the bed.\
-     You can type `SCREWS_TILT_CALCULATE` multiple times until it's close.
+ 1. With all of this done, you can now level the bed. First, home with `G28` and type `SCREWS_TILT_CALCULATE` to adjust the bed.\
+    You can type `SCREWS_TILT_CALCULATE` multiple times until it's close.
      
- **2**. To level the bed, you can run `BED_MESH_CALIBRATE`. After calibration, make sure to hit `SAVE_CONFIG`.
+ 2. To level the bed, you can run `BED_MESH_CALIBRATE`. After calibration, make sure to hit `SAVE_CONFIG`.
     
     **You can start it via G29 macro code** 
      
