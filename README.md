@@ -13,7 +13,7 @@ Configuration files for Slicer and Klipper.
 
 **Step-by-Step Guide for Ender 3 v2 Klipper with BLTouch and BMD extruder. (Flidd/MainsailOS) # NOT for OctoPrint**
 
-**What is Klipper?**
+## **What is Klipper?**
 
 Klipper https://www.klipper3d.org/
 is fundamentally similar to Marlin except that it runs on the Raspberry
