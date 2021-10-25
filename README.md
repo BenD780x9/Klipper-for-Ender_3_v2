@@ -6,7 +6,8 @@
   that I change it to work with BLTOUCH and BMG on Fluidd/MainsailOS and with my own configuration files.**
 
 Step-by-Step Guide for Ender 3 v2 Klipper with BLTouch and BMD extruder. (Flidd/MainsailOS) 
-  **NOT for OctoPrint**
+  
+  **# NOT for OctoPrint**
 
 ## **What is Klipper?**
 
