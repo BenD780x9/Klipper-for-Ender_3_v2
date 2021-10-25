@@ -99,7 +99,12 @@ and the printer's motherboard is simply there to pass messages to the hardware.
    A. In the home directory folder (`~/`) make a file called `printer.cfg`.\
         **Do not do this in the Klipper sub-folder**, it should be in your regular home directory.
         
-   B. Copy the contents of [this Ender 3 v2 configuration file](https://github.com/KevinOConnor/klipper/blob/master/config/printer-creality-ender3-v2-2020.cfg) into printer.cfg and save it.      
+   B. Copy the contents of [this Ender 3 v2 configuration file](https://github.com/KevinOConnor/klipper/blob/master/config/printer-creality-ender3-v2-2020.cfg) into printer.cfg and save it.
+   
+   C. In the Terminal of Fluidd / Mainsail, type `restart`. You should see the printer restart and become ready without errors.\
+   You can also issue a `status` command. What's beautiful about Klipper is that whenever you make config changes, \
+   you just save and run `restart` and that's it. No recompiling!
+   
    
    
   ## Klipper:
