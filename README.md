@@ -21,7 +21,7 @@ Pi vs. the motherboard itself. The firmware on the motherboard becomes "dumb"
 and everything runs on a much more powerful CPU.
 
 
-**Why should I install Klipper?**
+## **Why should I install Klipper?**
 
 Installing Klipper on an 8-bit CPU like the original Ender meant 
 detailed prints were a lot better since they simply didn't have enough 
@@ -36,28 +36,28 @@ advantages to Klipper:
   * Deep customizability without needing to recompile firmware
   * Custom G-codes and macros
 
-**Warning:** Installing 
+## **Warning:** Installing 
 Klipper will mean your printer's LCD is always blank. If you want 
 control when you're physically at the printer, you'll need to add a 
 touchscreen LCD to your Raspberry Pi instead and control the printer via
 OctoPrint.
 
 
-**What do I need to run Klipper?**
+## **What do I need to run Klipper?**
 
 Klipper requires a Raspberry Pi which you may already be using for OctoPrint. 
 Once you install Klipper, the Raspberry Pi becomes the "brain" of your printer 
 and the printer's motherboard is simply there to pass messages to the hardware.
 
 
-**Basic Installation**
+## **Basic Installation**
 
 
 
 
 
 
-  Klipper:
+  ## Klipper:
 
    https://www.reddit.com/r/klippers/comments/kj2h5r/stepbystep_guide_for_ender_3_v2_klipper_w_bltouc
     
@@ -74,7 +74,7 @@ and the printer's motherboard is simply there to pass messages to the hardware.
    https://gist.github.com/besser/30140a30312d5c7adceabf8a493472c3
     
     
-  Marlin:
+  ## Marlin:
   
    https://marlinfw.org/
    
@@ -84,7 +84,7 @@ and the printer's motherboard is simply there to pass messages to the hardware.
        
    https://github.com/mriscoc/Marlin_Ender3v2/releases
   
-  GCODE:
+  ## GCODE:
   
    https://github.com/prusa3d/PrusaSlicer/wiki/Slic3r-placeholders-(a-copy-of-the-mauk.cc-page)
   
