@@ -1,6 +1,8 @@
 # Ender_3_v2
 Configuration files for Slicer and Klipper.
 
+<img align="right" width=200 src="buildroot/share/pixmaps/Ender-3V2.jpg" />
+
 **This guide is replica of https://www.reddit.com/r/klippers/comments/kj2h5r/stepbystep_guide_for_ender_3_v2_klipper_w_bltouch/ 
   that I change it to work with Fluidd/MainsailOS and with my own configuration files.**
 
