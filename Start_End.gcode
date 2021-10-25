@@ -1,4 +1,4 @@
-### For PrusaSlicer / superSlicer because Macros dosent work for me now ###
+### For PrusaSlicer / SuperSlicer because Macros doesn't work for me now ###
 
 ##### Start: #####
 
