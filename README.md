@@ -236,7 +236,7 @@ In Cura, my g-codes are now `START_PRINT T_BED={material_bed_temperature_layer_0
 And check if START_PRINT AND END_PRINT section in the `printer.cfg` works for you.
 
 
-## What do I do with my LCD?
+## What to do with the LCD?
 Check this [github page](https://github.com/bustedlogic/DWIN_T5UIC1_LCD) and in this [Reddit post](https://www.reddit.com/r/klippers/comments/q6gl65/ender_3_v2_display_help/) you can find some important data.
 
 **I don't tested it yet because I have an old tablet that I use for my printer**
