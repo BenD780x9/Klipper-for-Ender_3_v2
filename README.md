@@ -59,9 +59,17 @@ and the printer's motherboard is simply there to pass messages to the hardware.
       B. Run the install script: `./klipper/scripts/install-octopi.sh`.
       
       C. Change to the Klipper directory (`cd ~/klipper/`) and run the config tool (`make menuconfig`). Select the following in the menu:
+            
              i. Uncheck **Enable extra low-level configuration options**.
-
-
+            ii. Set processor architecture to **STMicroelectronics STM32**.
+            
+           iii. Set processor model to **STM32F103**.
+            
+            iv. Set bootloader offset to **28KiB bootloader**.
+            
+            v. Uncheck the other two options (`Use USB` **and** `Use CAN`).
+            
+            vi. Save and exit.
 
 
   ## Klipper:
