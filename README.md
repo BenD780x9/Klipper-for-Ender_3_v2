@@ -79,13 +79,13 @@ and the printer's motherboard is simply there to pass messages to the hardware.
     From the main computer (where you ran ssh), type `scp pi@Mainsail:~/klipper/out/klipper.bin klipper.bin`.
 
 **5**. Put the file on an SD card and put the SD card into the Ender 3 while the printer is off. \
-   Turn on the printer and it should flash the firmware. If it flashed successfully, your LCD will go blank. \
-   Don't worry, if anything goes wrong simply put Marlin firmware on it and flash it again.
+       Turn on the printer and it should flash the firmware. If it flashed successfully, your LCD will go blank. \
+       Don't worry, if anything goes wrong simply put Marlin firmware on it and flash it again.
 
 **6**. You need to configure OctoPrint to communicate with the printer.
 
-    **A**. In Settings, go to Serial Connection and add `/tmp/printer` to Additional serial ports. Once you save, \
-        in the same menu choose `/tmp/printer` under Serial Port.
+   **A**. In Settings, go to Serial Connection and add `/tmp/printer` to Additional serial ports. Once you save, \
+          in the same menu choose `/tmp/printer` under Serial Port.
    
    
    
