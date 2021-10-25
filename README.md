@@ -170,7 +170,58 @@ clockwise 1/4 turn). To enable this, add:
     
     **You can start it via G29 macro code** 
      
-   
+
+## Advanced Stuff
+Klipper lets you do a lot of advanced stuff. It's a lot to cover, but here's a brief overview of what you can do:
+
+**Tuning PIDs**
+It's really simple to tune your extruder and bed PIDs.\
+Just run `PID_CALIBRATE HEATER=extruder TARGET=200` and `PID_CALIBRATE HEATER=heater_bed TARGET=60`.\
+**Don't forget to `SAVE_CONFIG` after each run!**
+
+
+**Resonance/Ringing Compensation**
+Do this before setting pressure advance, because it will change your values. When you start printing at higher speeds, you may see ringing. 
+This is also fairly simple to fix by [following this guide](https://www.klipper3d.org/Resonance_Compensation.html). Basically you print a model at very high accelerations, then measure 
+the frequency of the ripples in the print. Then, you tell Klipper those frequencies and select the algorithm you want to make it go away:
+
+    [input_shaper]
+    shaper_freq_x: 45.5
+    shaper_freq_y: 46.8
+    shaper_type: ei
+
+
+**Pressure Advance**
+Setting pressure advance is really straightforward with [these instructions](https://www.klipper3d.org/Pressure_Advance.html). You just slice an stl file, then get the printer into a special mode, 
+and print. Look for the height where your corners start becoming too rounded and calculate the value from there. Once you find the value, 
+under `[extruder]` add `pressure_advance` **with the number** (e.g., between 0.5 and 0.9 for an Ender 3 v2) and you're done!\
+Now try printing at higher speeds and see how it goes.
+
+
+**Babystepping**
+Babystepping is easy with Klipper, enabling you to dial in your z-offset just right.\
+While printing, simply issue `SET_GCODE_OFFSET Z_ADJUST=0.01 MOVE=1` to move the head up 0.01.\
+Reset to default with `SET_GCODE_OFFSET Z=0.0 MOVE=1`.
+
+
+**Custom Macros and G-Codes**
+At first glance, it looks like Klipper doesn't support some g-codes that Marlin does. However,\
+what Klipper supports is custom macros so you can create any g-code. For example, my G29 is:
+  [gcode_macro G29]
+  gcode:
+    G28
+    BED_MESH_CALIBRATE
+    G0 X0 Y0 Z10 F6000
+    BED_MESH_PROFILE save=default
+    SAVE_CONFIG
+    
+**Also you can check my printer.cfg file for more Macros**    
+
+You can also create your very own ones!\
+In Cura, my g-codes are now `START_PRINT T_BED={material_bed_temperature_layer_0} T_EXTRUDER={material_print_temperature_layer_0}` and `END_PRINT` with the actual commands defined in `printer.cfg`. This enables much easier porting between machines and slicers.\
+**Copy `cura_klipper_start_end.gcode` file and add to cura GECODE setting**\
+And check if START_PRINT AND END_PRINT section in the `printer.cfg` works for you.
+
   # To Do: 
   
     Add https://www.youtube.com/user/Neroga videos
