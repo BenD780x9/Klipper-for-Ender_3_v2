@@ -57,6 +57,9 @@ and the printer's motherboard is simply there to pass messages to the hardware.
       A. Clone the git repository: `git clone https://github.com/KevinOConnor/klipper`.
   
       B. Run the install script: `./klipper/scripts/install-octopi.sh`.
+      
+      C. Change to the Klipper directory (`cd ~/klipper/`) and run the config tool (`make menuconfig`). Select the following in the menu:
+             i. Uncheck **Enable extra low-level configuration options**.
 
 
 
