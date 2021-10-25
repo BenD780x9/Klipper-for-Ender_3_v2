@@ -96,7 +96,7 @@ and the printer's motherboard is simply there to pass messages to the hardware.
 7. Now we want to configure the firmware for the Ender 3 v2. \
    This is the equivalent of Marlin's `configuration.h` but you don't have to recompile firmware to change anything! It's pretty slick.   
    
-   A. In the home directory folder (`~/`) make a file called `printer.cfg`. 
+   A. In the home directory folder (`~/`) make a file called `printer.cfg`. \ 
       **Do not do this in the Klipper sub-folder**, it should be in your regular home directory.
    
    
