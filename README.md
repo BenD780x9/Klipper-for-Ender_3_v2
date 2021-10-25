@@ -54,9 +54,9 @@ and the printer's motherboard is simply there to pass messages to the hardware.
   `The default password is raspberry`.
 3. We'll generally be following [this guide](https://www.klipper3d.org/Installation.html).
 
-      A. Clone the git repository: `git clone https://github.com/KevinOConnor/klipper`.
+        A. Clone the git repository: `git clone https://github.com/KevinOConnor/klipper`.
   
-      B.Run the install script: `./klipper/scripts/install-octopi.sh`.
+        B.Run the install script: `./klipper/scripts/install-octopi.sh`.
 
 
 
