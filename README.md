@@ -243,7 +243,10 @@ Check this [github page](https://github.com/bustedlogic/DWIN_T5UIC1_LCD) and in 
   
   # To Do: 
   
-    
+    * Add videos to the guide.
+    * Add placeholder for output file.
+    * add Thanks to the buttom.
+    * 
   
   
   
