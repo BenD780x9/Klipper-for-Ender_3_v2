@@ -248,8 +248,6 @@ Check this [github page](https://github.com/bustedlogic/DWIN_T5UIC1_LCD) and in 
    * add Thanks to the buttom.
     
   
-  
-  
   ## Klipper:
 
    https://www.reddit.com/r/klippers/comments/kj2h5r/stepbystep_guide_for_ender_3_v2_klipper_w_bltouc
@@ -270,17 +268,7 @@ Check this [github page](https://github.com/bustedlogic/DWIN_T5UIC1_LCD) and in 
    
    https://www.youtube.com/c/Nero3D/videos
     
-    
-  ## Marlin:
-  
-   https://marlinfw.org/
    
-   https://marlin.crc.id.au/firmware/Ender%203%20V2%20-%20Stock/
-       
-   https://github.com/Jyers/Marlin
-       
-   https://github.com/mriscoc/Marlin_Ender3v2/releases
-  
   ## GCODE:
   
    https://github.com/prusa3d/PrusaSlicer/wiki/Slic3r-placeholders-(a-copy-of-the-mauk.cc-page)
