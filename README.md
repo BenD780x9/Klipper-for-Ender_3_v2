@@ -78,6 +78,18 @@ and the printer's motherboard is simply there to pass messages to the hardware.
 4. The firmware file will be in `~/klipper/out/klipper.bin`. There's many ways to get it out of the Raspberry Pi, but I used `scp`. \
     From the main computer (where you ran ssh), type `scp pi@Mainsail:~/klipper/out/klipper.bin klipper.bin`.
 
+5. Put the file on an SD card and put the SD card into the Ender 3 while the printer is off. \
+   Turn on the printer and it should flash the firmware. If it flashed successfully, your LCD will go blank. \
+   Don't worry, if anything goes wrong simply put Marlin firmware on it and flash it again.
+
+6. You need to configure OctoPrint to communicate with the printer.
+
+  A. In Settings, go to Serial Connection and add `/tmp/printer` to Additional serial ports. Once you save, \
+     in the same menu choose `/tmp/printer` under Serial Port.
+   
+   
+   
+   
   ## Klipper:
 
    https://www.reddit.com/r/klippers/comments/kj2h5r/stepbystep_guide_for_ender_3_v2_klipper_w_bltouc
