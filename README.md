@@ -296,4 +296,8 @@ I highly recommend to watch Klipper configuration and tests in this channels:
   ## GCODE:
   
    https://github.com/prusa3d/PrusaSlicer/wiki/Slic3r-placeholders-(a-copy-of-the-mauk.cc-page)
+   
+   ## Macros
+   
+   https://github.com/Desuuuu/klipper-macros
   
