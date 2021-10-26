@@ -198,6 +198,14 @@ the frequency of the ripples in the print. Then, you tell Klipper those frequenc
     shaper_freq_y: 46.8
     shaper_type: ei
 
+My `input_shaper` is:
+    
+    [input_shaper]
+    shaper_freq_x: 40.42
+    shaper_freq_y: 33.90
+    shaper_type: mzv
+    **Take a look at the changes between ei vs mzv**
+
 For more advance use [this video](https://www.youtube.com/watch?v=OoWQUcFimX8) or this [video](https://youtu.be/EJapxNsntsQ?t=459)
 
 **Pressure Advance**
