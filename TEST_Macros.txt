@@ -1,0 +1,49 @@
+[gcode_macro G29]
+gcode:
+  {% set t = params.T|default(0)|float %}
+
+  {% if printer.idle_timeout.state == "Printing" %}
+    {action_respond_info("This command cannot be used while printing")}
+  {% elif printer.toolhead.homed_axes != "xyz" %}
+    {action_respond_info("Please home XYZ first")}
+  {% else %}
+    SAVE_GCODE_STATE NAME=G29_state
+    G90
+    G1 Z10 F240
+    {% if t > 30.0 %}
+      M190 S{t}
+    {% endif %}
+    BED_MESH_CALIBRATE
+    {% if 'S' in params %}
+      M140 S{params.S}
+    {% endif %}
+    G90
+    G1 Z10 F240
+    G1 X150 Y155 F6000
+    RESTORE_GCODE_STATE NAME=G29_state MOVE=0
+  {% endif %}
+
+[gcode_macro WIPE_LINE]
+gcode:
+  {% set z = params.Z|default(0.25)|float %}
+  {% set n = params.N|default(0.4)|float %}
+
+  {% if printer.toolhead.homed_axes != "xyz" %}
+    {action_respond_info("Please home XYZ first")}
+  {% elif printer.extruder.temperature < 170 %}
+    {action_respond_info("Extruder temperature too low")}
+  {% else %}
+    SAVE_GCODE_STATE NAME=WIPE_LINE_state
+    M82
+    G90
+    G92 E0
+    G1 X10 Y20 Z5 F3000
+    G1 Z{z} F3000
+    G1 X10 Y150 F1500 E10.83
+    G1 X{ n + 10.0 } F5000
+    G1 Y22 F1500 E21.5
+    G1 Y20 F5000
+    RESTORE_GCODE_STATE NAME=WIPE_LINE_state MOVE=0
+  {% endif %}
+
+        
