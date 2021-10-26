@@ -218,14 +218,18 @@ A serias of commands to be run when a specific command is input
 
 **Custom Macros and G-Codes**
 At first glance, it looks like Klipper doesn't support some g-codes that Marlin does. However,\
-what Klipper supports is custom macros so you can create any g-code. For example, my G29 is:
-  [gcode_macro G29]
-  gcode:
-    G28
-    BED_MESH_CALIBRATE
-    G0 X0 Y0 Z10 F6000
-    BED_MESH_PROFILE save=default
-    SAVE_CONFIG
+what Klipper supports is custom macros so you can create any g-code. For example, my G29 is:\
+
+    [gcode_macro G29]
+    gcode:
+      G28
+      BED_MESH_CALIBRATE
+      G0 X0 Y0 Z10 F6000
+      BED_MESH_PROFILE save=default
+      SAVE_CONFIG
+    
+    
+Check this [Klipper example](https://www.klipper3d.org/Command_Templates.html) for more Macros.
     
 **Also you can check my printer.cfg file for more Macros**    
 
