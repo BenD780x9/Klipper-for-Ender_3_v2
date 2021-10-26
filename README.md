@@ -270,6 +270,7 @@ I highly recommend to watch Klipper configuration and tests in this channels:
    * Add placeholder for output file.
    * Add Thanks to the buttom.
    * Add license.
+   * Add Slicer profiles Cura \ SuperSlicer.
     
   
   ## Klipper:
