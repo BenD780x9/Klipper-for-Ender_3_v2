@@ -236,7 +236,8 @@ Check this [Klipper example](https://www.klipper3d.org/Command_Templates.html) f
 **Also you can check my printer.cfg file for more Macros**    
 
 You can also create your very own ones!\
-In Cura, my g-codes are now `START_PRINT T_BED={material_bed_temperature_layer_0} T_EXTRUDER={material_print_temperature_layer_0}` and `END_PRINT` with the actual commands defined in `printer.cfg`. This enables much easier porting between machines and slicers.
+In Cura, my g-codes are now `START_PRINT T_BED={material_bed_temperature_layer_0} T_EXTRUDER={material_print_temperature_layer_0}` and `END_PRINT` with the actual commands defined in `printer.cfg`.\
+This enables much easier porting between machines and slicers.
 
 **Copy `cura_klipper_start_end.gcode` file and add to cura GECODE setting**\
 And check if START_PRINT AND END_PRINT section in the `printer.cfg` works for you.
@@ -249,7 +250,7 @@ Check this [github page](https://github.com/bustedlogic/DWIN_T5UIC1_LCD) and in 
   
   
 # Youtube
-I highly recommend to watch Klipper configuration and tests in this channels:\
+I highly recommend to watch Klipper configuration and tests in this channels:
 1. [Teaching Tech](https://www.youtube.com/channel/UCbgBDBrwsikmtoLqtpc59Bw)
 2. [NERO 3D](https://www.youtube.com/user/Neroga)
 3. [eddietheengineer](https://www.youtube.com/user/userjet2005)
