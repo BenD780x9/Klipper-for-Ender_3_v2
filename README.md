@@ -152,6 +152,7 @@ I calculated it with [this klipper guide](https://www.klipper3d.org/Rotation_Dis
 And dont forgat to add `gear_ratio` to the [extruder].\
 For me the settings are:
       
+    [extruder]  
     rotation_distance: 22.288
     gear_ratio: 3:1 # BMG gear ratio
 
