@@ -44,7 +44,7 @@ G1 Z10
 # Absolute positionning
 G90
 # Present print
-# G1 X10 Y220 F2000 # absolute xy
+G1 X10 Y220 F2000 # absolute xy
 G1 X0 Y{machine_depth}
 #disable hotend and heated bed
 M104 S0
