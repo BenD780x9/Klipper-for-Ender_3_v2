@@ -198,13 +198,15 @@ the frequency of the ripples in the print. Then, you tell Klipper those frequenc
     shaper_freq_y: 46.8
     shaper_type: ei
 
-For more advance use [this video](https://www.youtube.com/watch?v=OoWQUcFimX8)
+For more advance use [this video](https://www.youtube.com/watch?v=OoWQUcFimX8) or this [video](https://youtu.be/EJapxNsntsQ?t=459)
 
 **Pressure Advance**
 Setting pressure advance is really straightforward with [these instructions](https://www.klipper3d.org/Pressure_Advance.html). You just slice an stl file, then get the printer into a special mode, 
 and print. Look for the height where your corners start becoming too rounded and calculate the value from there. Once you find the value, 
 under `[extruder]` add `pressure_advance` **with the number** (e.g., between 0.5 and 0.9 for an Ender 3 v2) and you're done!\
-Now try printing at higher speeds and see how it goes.
+Now try printing at higher speeds and see how it goes.\
+
+Also check this [video](https://youtu.be/EJapxNsntsQ?t=235)
 
 
 **Babystepping**
@@ -234,7 +236,7 @@ Check this [Klipper example](https://www.klipper3d.org/Command_Templates.html) f
 **Also you can check my printer.cfg file for more Macros**    
 
 You can also create your very own ones!\
-In Cura, my g-codes are now `START_PRINT T_BED={material_bed_temperature_layer_0} T_EXTRUDER={material_print_temperature_layer_0}` and `END_PRINT` with the actual commands defined in `printer.cfg`. This enables much easier porting between machines and slicers.\
+In Cura, my g-codes are now `START_PRINT T_BED={material_bed_temperature_layer_0} T_EXTRUDER={material_print_temperature_layer_0}` and `END_PRINT` with the actual commands defined in `printer.cfg`. This enables much easier porting between machines and slicers.
 
 **Copy `cura_klipper_start_end.gcode` file and add to cura GECODE setting**\
 And check if START_PRINT AND END_PRINT section in the `printer.cfg` works for you.
