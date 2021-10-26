@@ -147,9 +147,9 @@ There's a lot of [bed mesh configuration options](https://github.com/KevinOConno
 
 ## Configuring BMG
 **This part is very important so don't skip it**\
-To use BMG you need to calculate `rotation_distance` in your printer.
-I calculated it with [this klipper guide](https://www.klipper3d.org/Rotation_Distance.html?h=bmg#calibrating-rotation_distance-on-extruders)\
-but if you dont understand use [this video](https://www.youtube.com/watch?v=4PgOdES7n8Y)
+To use BMG you need to calculate `rotation_distance` in your printer.\
+I calculated it with [this klipper guide](https://www.klipper3d.org/Rotation_Distance.html?h=bmg#calibrating-rotation_distance-on-extruders)
+and you can also use this video [this video](https://www.youtube.com/watch?v=4PgOdES7n8Y)
 
    ## Screw Measurement
 
