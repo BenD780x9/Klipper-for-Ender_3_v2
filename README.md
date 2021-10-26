@@ -245,6 +245,14 @@ Check this [github page](https://github.com/bustedlogic/DWIN_T5UIC1_LCD) and in 
 
 **I don't tested it yet because I have an old tablet that I use for my printer**
   
+  
+# Youtube
+I highly recommend to watch Klipper configuration and tests in this channels:\
+1. [Teaching Tech](https://www.youtube.com/channel/UCbgBDBrwsikmtoLqtpc59Bw)
+2. [NERO 3D](https://www.youtube.com/user/Neroga)
+3. [eddietheengineer](https://www.youtube.com/user/userjet2005)
+
+
   # To Do: 
   
    * Add videos to the guide.
