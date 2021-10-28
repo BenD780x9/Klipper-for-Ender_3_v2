@@ -283,7 +283,7 @@ I highly recommend to watch Klipper configuration and tests in this channels:
   ## Thanks:
   
    * Miron Vranješ for his guide on [Reddit](https://www.reddit.com/r/klippers/comments/kj2h5r/stepbystep_guide_for_ender_3_v2_klipper_w_bltouch/) and in his [site](https://www.mironv.com/2020/12/23/ender3v2-bltouch-klipper/) which I based my guide on it.
-  * [Teaching Tech](https://www.youtube.com/channel/UCbgBDBrwsikmtoLqtpc59Bw), [NERO 3D](https://www.youtube.com/user/Neroga), [eddietheengineer](https://www.youtube.com/user/userjet2005) for their great videos that helped my a lot to configure and understand how Klipper works.
+  * [Teaching Tech](https://www.youtube.com/channel/UCbgBDBrwsikmtoLqtpc59Bw), [NERO 3D](https://www.youtube.com/user/Neroga), [eddietheengineer](https://www.youtube.com/user/userjet2005) for their great videos that helped me a lot to configure and understand how Klipper works.
   
   
   
