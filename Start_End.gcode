@@ -1,5 +1,5 @@
 Default start/end GCODE.
-**It's better to use Macros with START_PRINT / END_PRINT**
+** It's better to use Macros with START_PRINT / END_PRINT **
 
 ##### Start: #####
 
