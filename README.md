@@ -249,7 +249,7 @@ what Klipper supports is custom macros so you can create any g-code. For example
     
 Check this [Klipper example](https://www.klipper3d.org/Command_Templates.html) for more Macros.
     
-**Also you can check my printer.cfg file for more Macros**    
+**Also you can check [printer.cfg](https://github.com/BenD780x9/Klipper-for-Ender_3_v2/blob/main/printer.cfg) for more Macros**    
 
 You can also create your very own ones!\
 In Cura, my g-codes are now `START_PRINT T_BED={material_bed_temperature_layer_0} T_EXTRUDER={material_print_temperature_layer_0}` and `END_PRINT` with the actual commands defined in `printer.cfg`.\
