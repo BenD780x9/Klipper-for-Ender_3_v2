@@ -14,7 +14,8 @@ Step-by-Step Guide for Ender 3 v2 Klipper with BLTouch and BMD extruder. (Fluidd
 
 [Klipper](https://www.klipper3d.org/)
 is fundamentally similar to Marlin except that it runs on the Raspberry
-Pi vs. the motherboard itself. The firmware on the motherboard becomes "dumb" 
+Pi vs. the motherboard itself. \
+The firmware on the motherboard becomes "dumb" 
 and everything runs on a much more powerful CPU.
 
 **For more information about Klipper wach [this](https://www.youtube.com/watch?v=iNHta6zljoM)**
@@ -45,7 +46,8 @@ Fluidd / MainsailOS.
 
 Klipper requires a Raspberry Pi which you may already be using for OctoPrint. 
 Once you install Klipper, the Raspberry Pi becomes the "brain" of your printer 
-and the printer's motherboard is simply there to pass messages to the hardware.
+and the printer's motherboard is simply there to pass messages to the hardware. \
+You can use Raspberry Pi 2,3,4 **BUT NOT Zero**, I'm using Raspberry Pi 2 and it works fine but it better to use the newer version available.
 
 
 ## **Basic Installation**
@@ -56,25 +58,25 @@ and the printer's motherboard is simply there to pass messages to the hardware.
   `The default password is raspberry`.
 3. We'll generally be following [this guide](https://www.klipper3d.org/Installation.html).
 
-    * A. Clone the git repository: `git clone https://github.com/KevinOConnor/klipper`.
-  
-    * B. Run the install script: `./klipper/scripts/install-octopi.sh`.
+    * A. Flash [Fluidd](https://docs.fluidd.xyz/installation/fluiddpi) / [MainsailOS](https://docs.mainsail.xyz/setup/mainsail-os) to SD card.
      
-    * C. Change to the Klipper directory (`cd ~/klipper/`) and run the config tool (`make menuconfig`). Select the following in the menu:
+    * B. Create bin file firmware for the printer:
+     
+     Change to the Klipper (via SSH) directory (`cd ~/klipper/`) and run the config tool (`make menuconfig`). Select the following in the menu:
             
       - i. Uncheck **Enable extra low-level configuration options**.
            
-       - ii. Set processor architecture to **STMicroelectronics STM32**.
+      - ii. Set processor architecture to **STMicroelectronics STM32**.
             
       - iii. Set processor model to **STM32F103**.
             
       - iv. Set bootloader offset to **28KiB bootloader**.
             
-       - v. Uncheck the other two options (`Use USB` **and** `Use CAN`).
+      - v. Uncheck the other two options (`Use USB` **and** `Use CAN`).
              
       - vi. Save and exit.
      
-    * D. Type `make` and let it run.
+    * C. Type `make` and let it run.
 
 
 4. The firmware file will be in `~/klipper/out/klipper.bin`. There's many ways to get it out of the Raspberry Pi, but I used `scp`.\
@@ -84,7 +86,7 @@ and the printer's motherboard is simply there to pass messages to the hardware.
    Turn on the printer and it should flash the firmware. If it flashed successfully, your LCD will go blank. \
    Don't worry, if anything goes wrong simply put Marlin firmware on it and flash it again.
 
-6. You need to configure OctoPrint to communicate with the printer.
+6. You need to configure (Fluidd / MainsailOS) to communicate with the printer.
 
     * A. In Settings, go to Serial Connection and add `/tmp/printer` to Additional serial ports. Once you save, \
        in the same menu choose `/tmp/printer` under Serial Port.
