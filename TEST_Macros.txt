@@ -46,4 +46,22 @@ gcode:
     RESTORE_GCODE_STATE NAME=WIPE_LINE_state MOVE=0
   {% endif %}
 
+
+
+# Do nozzle priming
+[gcode_macro PRIME_EXTRUDER]
+gcode:
+    M117 Priming
+    G92 E0
+    G1 X10.1 Y20 Z2.0 F2000
+    G1 X10.1 Y200 Z0.28 F2000.0 E15; Draw the first line
+    G1 X10.4 Y200 Z0.28 F5000.0; Move to the side a little
+    G1 X10.4 Y20.0 Z0.28 F2000.0 E30; Draw the second line
+    G92 E0 
+    G1 F2400 E-0.7 # Small retract to remove pressure
+    G1 Z2.0 F3000 ;Move Z Axis up
+
+        
+
+
         
