@@ -35,7 +35,7 @@ advantages to Klipper:
   * Ability to use input shaping to eliminate ghosting and ringing
   * Better bed leveling
   * Deep customizability without needing to recompile firmware
-  * Custom G-codes and macros
+  * Custom G-codes and Macros
 
 if you print too fast, the quality suffers. If you print slower, the print comes out better, but at the price of time.
 
