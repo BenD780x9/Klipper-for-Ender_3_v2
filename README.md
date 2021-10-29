@@ -6,7 +6,7 @@
 **This guide is part of [this Reddit post](https://www.reddit.com/r/klippers/comments/kj2h5r/stepbystep_guide_for_ender_3_v2_klipper_w_bltouch/)
   that I change it to work with BLTOUCH and BMG on Fluidd/MainsailOS with my own configuration files.**
 
-Step-by-Step Guide for Ender 3 v2 Klipper with BLTouch and BMD extruder. (Fluidd/MainsailOS) 
+Step-by-Step Guide for Ender 3 v2 Klipper with BLTouch and BMD extruder. (Fluidd / MainsailOS) 
   
   **# NOT for OctoPrint**
 
@@ -38,7 +38,7 @@ advantages to Klipper:
 Klipper will mean your printer's LCD is always blank. If you want 
 control when you're physically at the printer, you'll need to add a 
 touchscreen LCD to your Raspberry Pi instead and control the printer via
-Fluidd/MainsailOS.
+Fluidd / MainsailOS.
 
 
 ## **What do I need to run Klipper?**
