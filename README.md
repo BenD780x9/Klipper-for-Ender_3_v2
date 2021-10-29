@@ -29,11 +29,15 @@ bit smaller (though Klipper uses more advanced kinematics equations so
 the prints will still be slightly better). But, there are a lot of other
 advantages to Klipper:
 
+  * Faster print speed
+  * Better print quality 
   * Ability to have pressure advance (similar to linear advance) on any Ender 3 v2
   * Ability to use input shaping to eliminate ghosting and ringing
   * Better bed leveling
   * Deep customizability without needing to recompile firmware
   * Custom G-codes and macros
+
+if you print too fast, the quality suffers. If you print slower, the print comes out better, but at the price of time.
 
 **Warning:** Installing 
 Klipper will mean your printer's LCD is always blank. If you want 
