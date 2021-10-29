@@ -295,6 +295,10 @@ I highly recommend to watch Klipper configuration and tests in this channels:
   
   
   ## Klipper:
+  
+   https://teachingtechyt.github.io/calibration.html#accel
+   
+   https://github.com/teachingtechYT
 
    https://www.reddit.com/r/klippers/comments/kj2h5r/stepbystep_guide_for_ender_3_v2_klipper_w_bltouc
     
