@@ -284,6 +284,7 @@ I highly recommend to watch Klipper configuration and tests in this channels:
    * Add placeholder for output file.
    * Add license.
    * Add section about why I'm not using OctoPrint.
+   * Add section about Printer Calibration. https://teachingtechyt.github.io/calibration.html#accel
     
   
   ## Thanks:
