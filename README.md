@@ -109,7 +109,7 @@ I'm using Raspberry Pi 2 and it works fine but it better to use the newest versi
         **Do not do this in the Klipper sub-folder**, it should be in your regular home directory.
         
     * B. Copy the contents of [this Ender 3 v2 configuration file](https://github.com/KevinOConnor/klipper/blob/master/config/printer-creality-ender3-v2-2020.cfg)          into printer.cfg and save it. 
-    **Or you can download and add my printer.cfg file from this git and change the parameters that work for you**
+    **Or you can download and add my [printer.cfg](https://raw.githubusercontent.com/BenD780x9/Klipper-for-Ender_3_v2/main/printer.cfg) file from this git and change the parameters that work for you**
    
     * C. In the Terminal of Fluidd / Mainsail, type `restart`. You should see the printer restart and become ready without errors.\
        You can also issue a `status` command. What's beautiful about Klipper is that whenever you make config changes, \
