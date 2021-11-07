@@ -60,7 +60,7 @@ I'm using Raspberry Pi 2 and it works fine but it better to use the newest versi
 1. You'll need to install [Fluidd](https://docs.fluidd.xyz/) / [MainsailOS](https://docs.mainsail.xyz/setup/mainsail-os) on a Raspberry Pi (don't use a v1 or a Zero).
 2. You'll be doing work on the Raspberry Pi itself, so you'll [want to SSH into it](https://www.raspberrypi.org/documentation/remote-access/ssh/) from another computer. 
   You'll run a command like ssh pi@Mainsail where Mainsail is the IP address or hostname of the pi.\
-  `The default password is raspberry`.
+  `The default password is "raspberry"`.
 3. We'll generally be following [this guide](https://www.klipper3d.org/Installation.html).
 
     * A. Flash [Fluidd](https://docs.fluidd.xyz/installation/fluiddpi) / [MainsailOS](https://docs.mainsail.xyz/setup/mainsail-os) to SD card.
