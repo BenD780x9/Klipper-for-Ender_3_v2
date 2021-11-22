@@ -77,11 +77,22 @@ I'm using Raspberry Pi 2 and it works fine but it better to use the newest versi
             
       - iv. Set bootloader offset to **28KiB bootloader**.
             
-      - v. Uncheck the other two options (`Use USB` **and** `Use CAN`).
+      - v. And serial on **USART1 PA10/PA9**.
              
       - vi. Save and exit.
      
     * C. Type `make` and let it run.
+   
+   
+   
+   **If you prefer a direct serial connection**
+   
+   In "make menuconfig":
+   
+   select "Enable extra low-level configuration options", and select serial (on USART3 PB11/PB10).\
+   Which is broken out on the 10 pin IDC cable used for the LCD module as follows:\
+   3: Tx, 4: Rx, 9: GND, 10: VCC
+   
 
 
 4. The firmware file will be in `~/klipper/out/klipper.bin`. There's many ways to get it out of the Raspberry Pi, but I used `scp`.\
