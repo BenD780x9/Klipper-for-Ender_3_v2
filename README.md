@@ -297,6 +297,7 @@ I highly recommend to watch Klipper configuration and tests in this channels:
    * Add section about why I'm not using OctoPrint.
    * Add section about Printer Calibration. https://teachingtechyt.github.io/calibration.html#accel
    * Add two cameras settings + settnig foe any type of camera. (in https://community.octoprint.org/t/usb-webcams-known-to-work-with-mjpg-streamer/21149)
+   * Add guides in sites.
     
   
   ## Thanks:
