@@ -51,7 +51,7 @@ Fluidd / MainsailOS.
 Klipper requires a Raspberry Pi which you may already be using for OctoPrint. 
 Once you install Klipper, the Raspberry Pi becomes the "brain" of your printer 
 and the printer's motherboard is simply there to pass messages to the hardware. \
-You can use Raspberry Pi 2,3,4 **BUT NOT Zero**! \
+You can use Raspberry Pi 2,3,4,Zero 2 W   ***(NOT Zero Version 1!)** \
 I'm using Raspberry Pi 2 and it works fine but it better to use the newest version available.
 
 
