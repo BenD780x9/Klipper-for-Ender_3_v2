@@ -1,3 +1,9 @@
+**Update**
+
+If you using MainSailOS, in the latest verision you need to do this step to fix the error:
+https://github.com/Arksine/moonraker/issues/349
+
+
 ## Klipper for Ender 3 V2 
 
 <img align="right" width=200 src="https://i.imgur.com/1tOqspu.png" />
